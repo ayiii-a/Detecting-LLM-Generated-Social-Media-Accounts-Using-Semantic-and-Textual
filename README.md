@@ -30,9 +30,6 @@ To mitigate the overfitting and severe False Positive rate observed in the basel
 * **Grid Search:** Applied `GridSearchCV` to constrain the TF-IDF vocabulary (`max_features`, `min_df`) and increase regularization.
 
 
-
-## 👉Next Steps:
-
 ### The Advanced Model (Semantic Approach...tec)
 **Architecture:** To move beyond purely lexical frequency-based representations, we implemented several semantic NLP architectures:
 * LSTM-based sequence models to capture contextual dependencies between tokens.
