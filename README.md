@@ -34,5 +34,24 @@ To mitigate the overfitting and severe False Positive rate observed in the basel
 ## 👉Next Steps:
 
 ### The Advanced Model (Semantic Approach...tec)
-* **Architecture:** TBD
-* **Purpose:** TBD
+**Architecture:** To move beyond purely lexical frequency-based representations, we implemented several semantic NLP architectures:
+* LSTM-based sequence models to capture contextual dependencies between tokens.
+* Transformer-based model to learn deep contextual semantic representations
+* stylometric feature fusion, combining handcrafted writing-style statistics with transformer embeddings.
+* hybrid semantic classifiers integrating: mean pooled contextual embeddings, stylometric features, downstream MLP classification heads.
+* 
+**Purpose:** The purpose of the advanced semantic models is to address the major weaknesses observed in the TF-IDF baseline:
+lexical memorization
+severe overfitting
+poor cross-domain generalization
+dependence on dataset-specific artifacts
+
+Instead of relying on isolated vocabulary frequencies, semantic models aim to learn:
+
+contextual meaning
+sentence-level semantics
+stylistic consistency
+deeper linguistic structures
+
+We specifically evaluate whether semantic representations can improve robustness against modern LLM-generated text across different datasets and generations of language models.
+
